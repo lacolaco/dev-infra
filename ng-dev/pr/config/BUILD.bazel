@@ -5,6 +5,7 @@ ts_library(
     srcs = ["index.ts"],
     visibility = [
         "//ng-dev:__subpackages__",
+        "//.github/local-actions/branch-manager:__subpackages__",
     ],
     deps = [
         "//ng-dev/commit-message",
