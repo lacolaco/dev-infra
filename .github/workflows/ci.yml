@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - 'setup-workload-identity-federation'
   pull_request:
     types: [opened, synchronize, reopened]
 
@@ -11,7 +12,8 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-permissions: {}
+permissions:
+  id-token: write
 
 defaults:
   run:
