@@ -83,5 +83,6 @@ pkg_npm(
     deps = [
         ":bundles",
         ":types",
+        ":ng-dev",
     ],
 )
